@@ -1,1 +1,1 @@
-# admin-dashboard
+This is an admin dashboard project, created using CSS Grid as part of the Odin Project cirriculum. 

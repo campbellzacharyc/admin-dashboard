@@ -1,0 +1,23 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.sidebar {
+    display: grid;
+    background-color: lightskyblue;
+    gap: 2rem;
+    grid-column: span 1;
+}
+
+.sidebar > div {
+    display: grid;
+}
+
+.header {
+    display: grid;
+}
+
+.main-content {
+    display: grid;
+}
