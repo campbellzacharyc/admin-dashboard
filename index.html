@@ -4,34 +4,204 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
+        <!-- Sidebar -->
         <div class="sidebar">
             <div class="dashboard">
-                <div>Dashboard</div>
+                <img src="pics/view-dashboard.svg" alt="view dashboard">
+                <h1>Dashboard</h1>
             </div>
-            <div class="links">
-                <div>Home</div>
-                <div>Profile</div>
-                <div>Messages</div>
-                <div>History</div>
-                <div>Tasks</div>
-                <div>Communities</div>               
+            <div>
+                <img src="pics/home.svg" alt="home">
+                <h1>Home</h1>
             </div>
-            <div class="settings">
-                <div>Settings</div>
-                <div>Support</div>
-                <div>Privacy</div>
+            <div>
+                <img src="pics/card-account-details.svg" alt="profile">
+                <h1>Profile</h1>
+            </div>
+            <div>
+                <img src="pics/message-reply.svg" alt="message">
+                <h1>Messages</h1>
+            </div>
+            <div>
+                <img src="pics/history.svg" alt="history">
+                <h1>History</h1>
+            </div>
+            <div>
+                <img src="pics/note-multiple.svg" alt="tasks">
+                <h1>Tasks</h1>
+            </div>
+            <div>
+                <img src="pics/account-group.svg" alt="communities">
+                <h1>Communities</h1>
+            </div>               
+            <div>
+                <img src="pics/cog.svg" alt="settings">
+                <h1>Settings</h1>
+            </div>
+            <div>
+                <img src="pics/help-box.svg" alt="support">
+                <h1>Support</h1>
+            </div>
+            <div>
+                <img src="pics/shield-check.svg" alt="privacy">
+                <h1>Privacy</h1>
             </div>
         </div>
+        <!-- Header -->
         <div class="header">
-
+            <!-- Search icon and search bar -->
+            <div class="search">
+                <div class="">
+                    <img src="pics/magnify.svg" alt="search icon">
+                </div>
+                <input type="text" name="search">
+            </div>
+            <div class="account">
+                <div>
+                    <img src="pics/bell-ring-outline.svg" alt="bell ring">
+                </div>
+                <div></div>
+                <p class="name">Morgan Oakley</p>
+            </div>
+            <!-- Bottom section of header -->
+            <div class="bottom">
+                <!-- Profile details -->
+                <div class="profile">
+                    <div></div>
+                    <div class="profile-name">
+                        <p class="greeting">Hi there,</p>
+                        <p class="name">Morgan Oakley <span class="username">(@morgan)</span></p>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="btn">New</button>
+                    <button class="btn">Upload</button>
+                    <button class="btn">Share</button>
+                </div>
+            </div>
         </div>
-        <div class="main-content">
-
-        </div>
+        <!-- Main content -->
+        <main class="main-content">
+            <div class="projects">
+                <h3>Your Projects</h3>
+                <!-- Section for project cards -->
+                <div class="cards">
+                    <div class="card">
+                        <h5 class="card-title">Super Cool Project</h5>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus ratione maxime nihil? Quidem sapiente maiores similique, praesentium ea, explicabo culpa, laboriosam est fuga modi reprehenderit. Molestias veniam explicabo ad esse?</p>
+                        <div class="icons">
+                            <img src="" alt=""><img src="" alt=""><img src="" alt="">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h5 class="card-title">Less Cool Project</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur sunt eius cumque, cum dicta voluptatum recusandae laudantium officia in odit culpa. Temporibus quisquam distinctio debitis libero voluptate beatae, provident adipisci?</p>
+                        <div class="icons">
+                            <img src="pics/star-plus-outline.svg" alt="star">
+                            <img src="pics/eye-plus-outline.svg" alt="eye">
+                            <img src="pics/source-branch.svg" alt="source">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h5 class="card-title">Impossible App</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus facere vitae expedita error libero voluptates neque et quo deserunt inventore dolor saepe numquam architecto, reprehenderit temporibus? Earum explicabo quo alias.</p>
+                        <div class="icons">
+                            <img src="pics/star-plus-outline.svg" alt="star">
+                            <img src="pics/eye-plus-outline.svg" alt="eye">
+                            <img src="pics/source-branch.svg" alt="source">                        
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h5 class="card-title">Easy Peasy App</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta aut, tempore velit ipsa labore officiis quam suscipit, nesciunt unde sunt iure consequatur ea possimus consectetur dolor doloremque at qui magni!</p>
+                        <div class="icons">
+                            <img src="pics/star-plus-outline.svg" alt="star">
+                            <img src="pics/eye-plus-outline.svg" alt="eye">
+                            <img src="pics/source-branch.svg" alt="source">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h5 class="card-title">Ad Blocker</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat a provident ut beatae dolorum quia quos tempore sequi, numquam culpa assumenda tenetur placeat unde, ullam, suscipit minus molestias ab laborum?</p>
+                        <div class="icons">
+                            <img src="pics/star-plus-outline.svg" alt="star">
+                            <img src="pics/eye-plus-outline.svg" alt="eye">
+                            <img src="pics/source-branch.svg" alt="source">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h5 class="card-title">Money Maker</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam error sint aliquid cupiditate qui unde repellat. Aut magni deleniti rerum. Saepe magni omnis, veritatis voluptatum reiciendis nemo distinctio aperiam consectetur!</p>
+                        <div class="icons">
+                            <img src="pics/star-plus-outline.svg" alt="star">
+                            <img src="pics/eye-plus-outline.svg" alt="eye">
+                            <img src="pics/source-branch.svg" alt="source">
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <!-- Side Content - Announcements and Trending -->
+            <div class="side-content">
+                <div class="announcements">
+                    <h3>Announcements</h3>
+                    <ul class="card">
+                        <li class="announcement">
+                            <h5 class="card-title">Site Maintenence</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, distinctio saepe. Iure similique sequi quia, enim aspernatur commodi odit mollitia, nesciunt sint modi libero, pariatur dicta dolores molestias impedit rerum!</p>
+                        </li>
+                        <li class="announcement">
+                            <h5 class="card-title">Community Share Day</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia id expedita omnis consequuntur reiciendis praesentium et, nemo porro tempora beatae molestiae quod velit error, adipisci possimus debitis itaque odit veniam.</p>
+                        </li>
+                        <li class="announcement">
+                            <h5 class="card-title">Updated Privacy Policy</h5>
+                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero necessitatibus ipsam voluptatum repudiandae, magnam recusandae quos hic, ipsa molestiae quo ea asperiores expedita distinctio saepe tempore magni dolor fuga nulla?</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="trending">
+                    <h3>Trending</h3>
+                    <ul class="card">
+                        <li class="trend trend-1">
+                            <div class="gh-avatar1"></div>
+                            <div class="account">
+                                <p class="username">@tegan</p>
+                                <p class="name card-text">World Peace Builder</p>
+                            </div>
+                        </li>
+                        <li class="trend trend-2">
+                            <div class="gh-avatar2"></div>
+                            <div class="account">
+                                <p class="username">@morgan</p>
+                                <p class="name card-text">Super Cool Project</p>
+                            </div>
+                        </li>
+                        <li class="trend trend-3">
+                            <div class="gh-avatar3"></div>
+                            <div class="account">
+                                <p class="username">@kendall</p>
+                                <p class="name card-text">Life Changing App</p>
+                            </div>
+                        </li>
+                        <li class="trend trend-4">
+                            <div class="gh-avatar4"></div>
+                            <div class="account">
+                                <p class="username">@alex</p>
+                                <p class="name card-text">No Traffic Maker</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
     </div>
 </body>
 </html>
