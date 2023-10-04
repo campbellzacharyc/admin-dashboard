@@ -15,6 +15,10 @@
     --content-gray: rgb(235, 235, 235);
     --transition-notDrawer: margin-left 0.4s ease-in;
     --transition-drawer: width 0.4s ease-in;
+    --avatar: url(https://static.thenounproject.com/png/1041215-200.png);
+    --avatar2: url(https://static.thenounproject.com/png/3112754-200.png);
+    --avatar3: url(https://uxwing.com/wp-content/themes/uxwing/download/toys-childhood/baby-face-icon.png);
+    --avatar4: url(https://static.thenounproject.com/png/3141856-200.png);
 }
 
 /* body {
@@ -26,9 +30,10 @@
     margin: 0;
     padding: 0;
 }
+
 .container {
     display: grid;
-    grid-template-columns: 5rem 1fr 1fr 1fr;
+    grid-template-columns: .75fr 1fr 1fr 1fr;
     width: 100vw;
     height: 100vh;
     grid-template-areas:
@@ -41,9 +46,8 @@
     grid-area: sidebar;
     display: grid;
     background-color: #0ea5e9;
-    width: 5rem;
-    position: fixed;
-    gap: 2rem;
+    width: .75fr;
+    gap: .125rem;
     grid-column: span 1;
     overflow: hidden;
     height: 100vh;
@@ -55,7 +59,7 @@
 }
 
 .sidebar > div {
-    display: grid;
+    display: flex;
     color: white;
     align-items: center;
     justify-content: start;
@@ -85,7 +89,8 @@
 }
 
 .dashboard {
-    font-size: clamp(12px, calc(25px + 0.9vw, 50px));
+    font-size: clamp(12px, calc(25px + 0.9vw), 50px);
+    font-weight: 800;
 }
 
 .dashboard img {
@@ -103,8 +108,6 @@
     background-color: (var(--nav-bg-1));
     padding: 1.5rem 3rem;
     border-bottom: 2px solid rgb(219, 219, 219);
-    position: sticky;
-    top: 0;
 }
 
 .top {
@@ -118,6 +121,13 @@
     align-items: center;
     margin-right: auto;
     width: 100%;
+}
+
+.magnify {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .search > input {
@@ -138,6 +148,17 @@
     align-items: center;
     font-size: 1.2rem;
     font-weight: 800;
+}
+
+.avatar {
+    background: var(--avatar) center center / cover no-repeat;
+    border-radius: 50%;
+}
+
+.header .avatar {
+    margin: 0 1rem 0 2.5rem;
+    width: 75px;
+    height: 75px; 
 }
 
 img {
@@ -207,7 +228,7 @@ img {
 }
 
 .card {
-    background-color: rgba(45, 187, 187, .459);
+    background-color: var(--nav-bg-1);
     padding: 2rem;
     border-radius: .6rem;
     box-shadow: 0 10px 15px -3px lightgray;
@@ -278,6 +299,7 @@ img {
 .announcement h5 {
     font-size: 0.9rem;
     margin-bottom: 0.3rem;
+    font-weight: 800;
 }
 
 .announcement p {
@@ -294,6 +316,7 @@ img {
 
 .trending {
     grid-area: trending;
+    padding-top: 2rem;
 }
 
 .trending .card {
@@ -326,28 +349,28 @@ img {
 }
 
 .trend-1 .avatar2 {
-    background: var(--gh-avatar2) center center / cover no-repeat;
+    background: var(--avatar2) center center / cover no-repeat;
     border-radius: 50%;
     width: 40px;
     height: 40px;
 }
 
 .trend-2 .avatar {
-    background: var(--gh-avatar2) center center / cover no-repeat;
+    background: var(--avatar2) center center / cover no-repeat;
     border-radius: 50%;
     width: 40px;
     height: 40px;
 }
 
 .trend-3 .avatar3 {
-    background: var(--gh-avatar2) center center / cover no-repeat;
+    background: var(--avatar3) center center / cover no-repeat;
     border-radius: 50%;
     width: 40px;
     height: 40px;
 }
 
 .trend-4 .avatar4 {
-    background: var(--gh-avatar2) center center / cover no-repeat;
+    background: var(--avatar4) center center / cover no-repeat;
     border-radius: 50%;
     width: 40px;
     height: 40px;
